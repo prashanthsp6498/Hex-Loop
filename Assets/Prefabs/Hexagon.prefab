@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8435180799747509780}
   - component: {fileID: 8435180799747509779}
   - component: {fileID: 8435180799747509778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hexagon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,10 +170,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rb: {fileID: 8435180799747509779}
-  playerManager: {fileID: 3857088658999176495, guid: e9b7119799d02b81491e4889b566747f,
-    type: 3}
-  scoreText: {fileID: 2722700125573230097, guid: 4faa5113d9d84e998b329ff567883aff,
-    type: 3}
 --- !u!1 &8435180799786198409
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8435180799786198406}
   - component: {fileID: 8435180799786198407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
