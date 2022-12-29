@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
+using HexLoop.Core.ScoreSystem;
+using HexLoop.Core.ManagerUtil;
 
-namespace HexLoop.GamePlay
+namespace HexLoop.Core.GamePlay
 {
     public class Hexagon : MonoBehaviour
     {
@@ -18,9 +20,8 @@ namespace HexLoop.GamePlay
             transform.localScale -= Vector3.one * (speed * Time.deltaTime);    
             if (transform.localScale.x < 0.5f)
             {
-                UIController.UpdateScore();
-                // Destroy(gameObject);
-                Spawner.AddGameObjectToPool(gameObject);
+                GameFactory.Get<ScoreModel>().IncrementScore();
+                GameFactory.Get<Spawner>().AddToPool(gameObject);
             }
         }
     }
