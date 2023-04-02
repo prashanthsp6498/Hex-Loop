@@ -1,0 +1,3 @@
+[submodule "Assets/Editor/UnityUtility"]
+	path = Assets/Editor/UnityUtility
+	url = https://github.com/prashanthsp6498/UnityUtility.git
